@@ -1,14 +1,14 @@
 # Meat - Angular App
 
-### Instalando as Dependências
+### Installing the Dependencies
 
 `npm install`
 
-### Inicializando o Servidor
+### Initializing the Server
 
 `ng serve` or `npm start`
 
-## Initializing Backend
+## Initializing the Backend
 
 ### Installing json-server
 
