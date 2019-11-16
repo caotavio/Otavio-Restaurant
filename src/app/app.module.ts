@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpModule } from '@angular/http';
 import { RouterModule } from '@angular/router';
+import { FormsModule } from '@angular/forms';
 
 
 import { AppComponent } from './app.component';
@@ -17,6 +18,13 @@ import { MenuComponent } from './restaurant-detail/menu/menu.component';
 import { ShoppingCartComponent } from './restaurant-detail/shopping-cart/shopping-cart.component';
 import { MenuItemComponent } from './restaurant-detail/menu-item/menu-item.component';
 import { ReviewsComponent } from './restaurant-detail/reviews/reviews.component';
+import { ShoppingCartService } from './restaurant-detail/shopping-cart/shopping-cart.service';
+import { OrderComponent } from './order/order.component';
+import { InputComponent } from './shared/input/input.component';
+import { RadioComponent } from './shared/radio/radio.component';
+import { OrderItemsComponent } from './order/order-items/order-items.component';
+import { OrderService } from './order/order.service';
+import { DeliveryCostsComponent } from './order/delivery-costs/delivery-costs.component';
 
 
 @NgModule({
@@ -31,14 +39,24 @@ import { ReviewsComponent } from './restaurant-detail/reviews/reviews.component'
     MenuComponent,
     ShoppingCartComponent,
     MenuItemComponent,
-    ReviewsComponent
+    ReviewsComponent,
+    OrderComponent,
+    InputComponent,
+    RadioComponent,
+    OrderItemsComponent,
+    DeliveryCostsComponent
   ],
   imports: [
     BrowserModule,
     HttpModule,
+    FormsModule,
     RouterModule.forRoot(ROUTES)
   ],
-  providers: [RestaurantsService],
+  providers: [
+    RestaurantsService,
+    ShoppingCartService,
+    OrderService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
