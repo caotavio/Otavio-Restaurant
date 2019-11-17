@@ -3,8 +3,6 @@
 
 <section class="content">
   <section class="invoice">
-        {{form.valid}}
-        {{form.value | json}}
 
         <form #form="ngForm" novalidate>
           <div class="row">
@@ -31,17 +29,22 @@
             </div>
             <div class="col-sm-3 col-xs-6">
               <mt-input-container label="Complement">
-                <input type="text" class="form-control" name="optional" ngModel placeholder="Complement" autocomplete="off">
+                <input type="text" class="form-control" name="complement" ngModel placeholder="Complement" autocomplete="off">
               </mt-input-container>
             </div>
-            <div class="col-sm-3 col-xs-12">
+            <div class="col-sm-4 col-xs-8">
               <mt-input-container errorMessage="Required - 3 characters" label="City">
                 <input type="text" class="form-control" name="city" required minlength="3" ngModel placeholder="City" autocomplete="off">
               </mt-input-container>
             </div>
-            <div class="col-sm-3 col-xs-12">
+            <div class="col-sm-4 col-xs-8">
               <mt-input-container errorMessage="Required - 2 characters" label="County">
                   <input type="text" class="form-control" name="county" required minlength="2" ngModel placeholder="County" autocomplete="off">
+              </mt-input-container>
+            </div>
+            <div class="col-sm-4 col-xs-8">
+              <mt-input-container errorMessage="Required - 7 characters" label="Post Code">
+                  <input type="text" class="form-control" name="postCode" required minlength="7" ngModel placeholder="Post Code" autocomplete="off">
               </mt-input-container>
             </div>
             <!-- /.col -->
@@ -86,7 +89,9 @@
 
         <div class="row">
           <div class="col-xs-12">
-            <button class="btn btn-success pull-right" [disabled]="!form.valid || cartItems().length === 0"><i class="fa fa-credit-card"></i> Complete Order
+            <button (click)="checkOrder(form.value)" class="btn btn-success pull-right"
+              [disabled]="!form.valid || cartItems().length === 0">
+                <i class="fa fa-credit-card"></i> Complete Order
             </button>
           </div>
         </div>

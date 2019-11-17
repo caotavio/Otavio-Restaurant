@@ -1,0 +1,15 @@
+<section class="content-header">
+  </section>
+
+  <section class="content">
+    <div class="jumbotron">
+      <h2>Order Completed</h2>
+      <p>Your order was received by the restaurant. Set up your table! Your food is on it's way!</p>
+      <p><b>Please rate</b> your experience:</p>
+      <p><mt-rating (rated)="rated = true"></mt-rating></p>
+      <p [hidden]="!rated">
+        Thank you for rating!
+      </p>
+    </div>
+
+  </section>
