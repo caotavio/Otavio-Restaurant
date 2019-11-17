@@ -4,47 +4,56 @@
 <section class="content">
   <section class="invoice">
 
-        <form #form="ngForm" novalidate>
+        <form [formGroup]="orderForm" novalidate>
           <div class="row">
             <div class="col-xs-12">
               <h2 class="page-header">
                 <i class="fa fa-shopping-cart"></i> Complete your order
               </h2>
             </div>
-          </div>                
+          </div>
+          
+          <div class="row">
+            <div class="col-xs-12 col-sm-9">
+              <p class="lead"> Your Details:</p>
+            </div>
+            <div class="col-xs-12 col-sm-3">
+                <span class="help-block pull-right has-error-block" *ngIf="orderForm.hasError('emailsDoNotMatch')"><i class="fa fa-remove"></i> Emails don't match</span>
+              </div>
+            <div class="col-sm-6 col-xs-12">
+                <mt-input-container errorMessage="Required - 5 characters" label="Name">
+                  <input class="form-control" formControlName="name" placeholder="Name" autocomplete="off">
+                </mt-input-container>
+            </div>
+            <div class="col-sm-3 col-xs-6">
+                <mt-input-container errorMessage="Invalid email" label="Email">
+                  <input type="text" class="form-control" formControlName="email" placeholder="Email" autocomplete="off">
+                </mt-input-container>
+            </div>
+            <div class="col-sm-3 col-xs-6">
+                <mt-input-container errorMessage="This field must match your email" label="Email confirmation">
+                  <input type="text" class="form-control" formControlName="emailConfirmation" placeholder="Email confirmation" autocomplete="off">
+                </mt-input-container>
+            </div>
+          </div>
 
-          <div class="row invoice-info">
+          <div class="row">
             <div class="col-xs-12">
               <p class="lead">Delivery Address:</p>
             </div>
             <div class="col-sm-6 col-xs-12">
-              <mt-input-container errorMessage="Required - 5 characters" label="Street">
-                <input class="form-control" name="street" ngModel required minlength="5" placeholder="Street" autocomplete="off">
+              <mt-input-container errorMessage="Required - 5 characters" label="Address">
+                <input class="form-control" formControlName="address" placeholder="Address" autocomplete="off">
               </mt-input-container>
             </div>
             <div class="col-sm-3 col-xs-6">
               <mt-input-container errorMessage="Required - only numbers" label="Number">
-                <input type="text" class="form-control" name="number" required minlength="1" ngModel placeholder="Number" pattern="^[0-9]*$" autocomplete="off">
+                <input type="text" class="form-control" formControlName="number" placeholder="Number" pattern="^[0-9]*$" autocomplete="off">
               </mt-input-container>
             </div>
             <div class="col-sm-3 col-xs-6">
-              <mt-input-container label="Complement">
-                <input type="text" class="form-control" name="complement" ngModel placeholder="Complement" autocomplete="off">
-              </mt-input-container>
-            </div>
-            <div class="col-sm-4 col-xs-8">
-              <mt-input-container errorMessage="Required - 3 characters" label="City">
-                <input type="text" class="form-control" name="city" required minlength="3" ngModel placeholder="City" autocomplete="off">
-              </mt-input-container>
-            </div>
-            <div class="col-sm-4 col-xs-8">
-              <mt-input-container errorMessage="Required - 2 characters" label="County">
-                  <input type="text" class="form-control" name="county" required minlength="2" ngModel placeholder="County" autocomplete="off">
-              </mt-input-container>
-            </div>
-            <div class="col-sm-4 col-xs-8">
               <mt-input-container errorMessage="Required - 7 characters" label="Post Code">
-                  <input type="text" class="form-control" name="postCode" required minlength="7" ngModel placeholder="Post Code" autocomplete="off">
+                  <input type="text" class="form-control" formControlName="postCode" placeholder="Post Code" autocomplete="off">
               </mt-input-container>
             </div>
             <!-- /.col -->
@@ -70,7 +79,7 @@
               <p class="lead">Payment:</p>
 
                 <div class="form-group">
-                   <mt-radio [options]="paymentOptions" name="paymentOption" ngModel required></mt-radio>
+                   <mt-radio [options]="paymentOptions" formControlName="paymentOption"></mt-radio>
                 </div>
 
             </div>
@@ -89,8 +98,8 @@
 
         <div class="row">
           <div class="col-xs-12">
-            <button (click)="checkOrder(form.value)" class="btn btn-success pull-right"
-              [disabled]="!form.valid || cartItems().length === 0">
+            <button (click)="checkOrder(orderForm.value)" class="btn btn-success pull-right"
+              [disabled]="!orderForm.valid || cartItems().length === 0">
                 <i class="fa fa-credit-card"></i> Complete Order
             </button>
           </div>
