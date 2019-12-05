@@ -1,4 +1,4 @@
-import './polyfills.ts';
+// import './polyfills.ts';
 
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 import { enableProdMode } from '@angular/core';
@@ -10,3 +10,8 @@ if (environment.production) {
 }
 
 platformBrowserDynamic().bootstrapModule(AppModule);
+
+// platformBrowserDynamic().bootstrapModule(AppModule, {
+//   ngZone: 'noop'
+// })
+// .catch(err => console.log(err));

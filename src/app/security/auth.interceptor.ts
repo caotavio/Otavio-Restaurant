@@ -1,7 +1,7 @@
-import { HttpInterceptor, HttpRequest, HttpHandler, HttpEvent } from "@angular/common/http";
-import { Observable } from "rxjs/Observable";
-import { Injectable, Injector } from "@angular/core";
-import { LoginService } from "./login/login.service";
+import { HttpInterceptor, HttpRequest, HttpHandler, HttpEvent } from '@angular/common/http';
+import { Observable } from 'rxjs';
+import { Injectable, Injector } from '@angular/core';
+import { LoginService } from './login/login.service';
 
 @Injectable()
 export class AuthInterceptor implements HttpInterceptor {
@@ -10,11 +10,11 @@ export class AuthInterceptor implements HttpInterceptor {
 
     intercept(request: HttpRequest<any>, next: HttpHandler): Observable<HttpEvent<any>> {
         const loginService = this.injector.get(LoginService)
-        if(loginService.isLoggedIn()) {
+        if (loginService.isLoggedIn()) {
             const authRequest = request.clone(
-                {setHeaders: {'Authorization':`Bearer ${loginService.user.accessToken}`}})
+                {setHeaders: {'Authorization': `Bearer ${loginService.user.accessToken}`}})
             return next.handle(authRequest)
-        }else {
+        } else {
             return next.handle(request)
         }
     }

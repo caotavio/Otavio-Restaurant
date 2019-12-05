@@ -1,8 +1,7 @@
-import { HttpErrorResponse } from "@angular/common/http";
-import { Observable } from "rxjs/Observable";
-import { ErrorHandler, Injectable, Injector, NgZone } from "@angular/core";
-import { NotificationService } from "./shared/messages/notification.service";
-import { LoginService } from "./security/login/login.service";
+import { HttpErrorResponse } from '@angular/common/http';
+import { ErrorHandler, Injectable, Injector, NgZone } from '@angular/core';
+import { NotificationService } from './shared/messages/notification.service';
+import { LoginService } from './security/login/login.service';
 
 @Injectable()
 export class ApplicationErrorHandler extends ErrorHandler {
@@ -12,9 +11,9 @@ export class ApplicationErrorHandler extends ErrorHandler {
                 private zone: NgZone) {
         super()
     }
-    
+
     handleError(errorResponse: HttpErrorResponse | any) {
-        if(errorResponse instanceof HttpErrorResponse) {
+        if (errorResponse instanceof HttpErrorResponse) {
             const message = errorResponse.error.message
             this.zone.run(() => {
                 switch (errorResponse.status) {

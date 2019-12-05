@@ -51,4 +51,4 @@ import { ApplicationErrorHandler } from './app.error-handler';
   providers: [{provide: ErrorHandler, useClass: ApplicationErrorHandler}],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}
