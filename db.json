@@ -4,61 +4,61 @@
       "id": "bread-bakery",
       "name": "Bread & Bakery",
       "category": "Bakery",
-      "deliveryEstimate": "25m",
+      "deliveryEstimate": "25 min",
       "rating": 4.9,
       "imagePath": "assets/img/restaurants/breadbakery.png",
-      "about": "A Bread & Brakery tem 40 anos de mercado. Fazemos os melhores doces e pães. Compre e confira.",
-      "hours": "Funciona de segunda à sexta, de 8h às 23h"
+      "about": "Bread & Brakery has 40 years of history. We have the best breads and sweets. Come and check us out.",
+      "hours": "Opening hours from Monday to Friday, 8:00 am to 11:00 pm"
     },
     {
       "id": "burger-house",
       "name": "Burger House",
       "category": "Hamburgers",
-      "deliveryEstimate": "100m",
+      "deliveryEstimate": "60 min",
       "rating": 3.5,
       "imagePath": "assets/img/restaurants/burgerhouse.png",
-      "about": "40 anos se especializando em trash food.",
-      "hours": "Funciona todos os dias, de 10h às 22h"
+      "about": "31 years specializing in junk food.",
+      "hours": "We are open everyday from 10:00 am to 10:00 pm"
     },
     {
       "id": "coffee-corner",
       "name": "Coffee Corner",
       "category": "Coffee Shop",
-      "deliveryEstimate": "30-40m",
+      "deliveryEstimate": "30-40 min",
       "rating": 4.8,
       "imagePath": "assets/img/restaurants/coffeecorner.png",
-      "about": "A Coffe Corner foi eleita a melhor cafeteria da cidade.",
-      "hours": "Funciona de segunda à sábado, de 6h às 22h"
+      "about": "Coffe Corner won the award for best coffee shop in town.",
+      "hours": "Opening hours from Monday to Saturday, 7:00 am to 8:00 pm"
     },
     {
       "id": "green-food",
       "name": "Green Food",
-      "category": "Saudável",
-      "deliveryEstimate": "75m",
+      "category": "Healthy",
+      "deliveryEstimate": "40 min",
       "rating": 4.1,
       "imagePath": "assets/img/restaurants/greenfood.png",
-      "about": "Comida saudável é no Green Food. Compramos barato, vendemos caro. ;)",
-      "hours": "Somente em horário de almoço, das 11h às 15h"
+      "about": "Healthy food is Green Food. We buy it cheap and sell it steep. ;)",
+      "hours": "We are open everyday from 11:00 am to 3:00 pm"
     },
     {
       "id": "ice-cream",
       "name": "Ice Cream",
       "category": "Ice Creams",
-      "deliveryEstimate": "40-65m",
+      "deliveryEstimate": "30 min",
       "rating": 4.5,
       "imagePath": "assets/img/restaurants/icy.png",
-      "about": "A Ice Cream é uma sorveteria inovadora.",
-      "hours": "Funciona todos os dias, de 10h às 1h"
+      "about": "Ice Cream is an innovative ice cream parlour.",
+      "hours": "We are open everyday from 10:00 am to 6:00 pm"
     },
     {
       "id": "tasty-treats",
       "name": "Tasty Treats",
-      "category": "Doces",
-      "deliveryEstimate": "20m",
+      "category": "Sweets",
+      "deliveryEstimate": "20 min",
       "rating": 4.4,
       "imagePath": "assets/img/restaurants/tasty.png",
-      "about": "A doceria com mais tradição da cidade",
-      "hours": "Funciona de segunda à sábado, de 8h às 23h"
+      "about": "The most traditional sweet shop in town.",
+      "hours": "Opening hours from Monday to Saturday, 8:00 am to 11:00 pm"
     }
   ],
   "menu": [
@@ -66,7 +66,7 @@
       "id": "cup-cake",
       "imagePath": "assets/img/foods/cupcake.png",
       "name": "Cup Cake",
-      "description": "Cup Cake recheado de Doce de Leite",
+      "description": "Cup Cake filled with custard.",
       "price": 8.7,
       "restaurantId": "bread-bakery"
     },
@@ -74,15 +74,15 @@
       "id": "donut",
       "imagePath": "assets/img/foods/donut.png",
       "name": "Donut",
-      "description": "Coberto com chantilly",
+      "description": "With chocolate glaze topping.",
       "price": 2.5,
       "restaurantId": "bread-bakery"
     },
     {
       "id": "bread",
       "imagePath": "assets/img/foods/bread.png",
-      "name": "Pão Artesanal Italiano",
-      "description": "Pão artesanal com queijos italianos",
+      "name": "Italian Artisan Bread",
+      "description": "Artisan bread with italian cheese.",
       "price": 15.9,
       "restaurantId": "bread-bakery"
     },
@@ -90,39 +90,39 @@
       "id": "burger",
       "imagePath": "assets/img/foods/burger.png",
       "name": "Classic Burger",
-      "description": "O clássico. Não tem como errar.",
+      "description": "A classic, the perfect choice.",
       "price": 18.5,
       "restaurantId": "burger-house"
     },
     {
       "id": "fries",
       "imagePath": "assets/img/foods/fries.png",
-      "name": "Batatas Fritas",
-      "description": "Batatas fritas crocantes",
+      "name": "French fries",
+      "description": "Crunchy french fries.",
       "price": 5.5,
       "restaurantId": "burger-house"
     },
     {
       "id": "coke.png",
       "imagePath": "assets/img/foods/coke.png",
-      "name": "Refrigerante",
-      "description": "O refri mais gelado da cidade.",
+      "name": "Soda",
+      "description": "The coldest refreshment in the city.",
       "price": 4.5,
       "restaurantId": "burger-house"
     },
     {
       "id": "capp",
       "imagePath": "assets/img/foods/capp.png",
-      "name": "Cappuccino com Chantilly",
-      "description": "Tradicional cappuccino com chantilly",
+      "name": "Cappuccino",
+      "description": "The traditional cappuccino whipped cream",
       "price": 9.9,
       "restaurantId": "coffee-corner"
     },
     {
       "id": "espreso",
       "imagePath": "assets/img/foods/espreso.png",
-      "name": "Super Espreso",
-      "description": "Café espresso duplo. ",
+      "name": "Super Espresso",
+      "description": "Just a double espresso really.",
       "price": 12.5,
       "restaurantId": "coffee-corner"
     },
@@ -130,79 +130,79 @@
       "id": "starb",
       "imagePath": "assets/img/foods/starb.png",
       "name": "Starbucks Copycat",
-      "description": "O mais pedido da casa. O verdadeiro café americano pura água.",
+      "description": "The house favourite. That coffee that has almost no coffee at all.",
       "price": 15.6,
       "restaurantId": "coffee-corner"
     },
     {
       "id": "zlasagna",
       "imagePath": "assets/img/foods/zlasagna.png",
-      "name": "Lasagna de Zucchini",
-      "description": "Lasagna deliciosa que se salva por causa do queijo",
+      "name": "Zucchini Lasagna",
+      "description": "A delicious lasagna that is saved due to cheese.",
       "price": 14.9,
       "restaurantId": "green-food"
     },
     {
       "id": "greensandwich",
       "imagePath": "assets/img/foods/greensandwich.png",
-      "name": "Sanduíche de Frango",
-      "description": "Frango grelhado e salada",
+      "name": "Chicken sandwich",
+      "description": "Grilled chicken and salad.",
       "price": 10.5,
       "restaurantId": "green-food"
     },
     {
       "id": "ceasar",
       "imagePath": "assets/img/foods/ceasar.png",
-      "name": "Salada Ceasar",
-      "description": "Clássica salada ceasar.",
+      "name": "Caesar Salad",
+      "description": "Classic caesar salad.",
       "price": 33.9,
       "restaurantId": "green-food"
     },
     {
       "id": "sunday",
       "imagePath": "assets/img/foods/sunday.png",
-      "name": "Mega Sunday",
-      "description": "Sunday com várias bolas de sorvete a sua escolha",
+      "name": "Mega Sundae",
+      "description": "Sundae with a lot of differnet flavours.",
       "price": 21.5,
       "restaurantId": "ice-cream"
     },
     {
       "id": "chocpop",
       "imagePath": "assets/img/foods/chocpop.png",
-      "name": "Picolé de Brigadeiro",
-      "description": "Picolé de brigadeiro recheado com côco.",
+      "name": "Chocolate Popsicle",
+      "description": "A chocolate popsicle filled with coconut.",
       "price": 8.5,
       "restaurantId": "ice-cream"
     },
     {
       "id": "icestd.png",
       "imagePath": "assets/img/foods/icestd.png",
-      "name": "Sorvete Simples",
-      "description": "Clássico sorvete de rua onde todos os sabores são idênticos.",
+      "name": "Simple Ice Cream",
+      "description": "The classic one that you can find anywhere.",
       "price": 1.5,
       "restaurantId": "ice-cream"
     },
     {
       "id": "cup",
       "imagePath": "assets/img/foods/cup.png",
-      "name": "Cup Cake de Choc. Branco",
-      "description": "Cup Cake de chocolate branco",
+      "name": "White Chocolate Cupcake",
+      "description": "A cupcake filled with white chocolate.",
       "price": 5.5,
       "restaurantId": "tasty-treats"
     },
     {
       "id": "straw",
       "imagePath": "assets/img/foods/straw.png",
-      "name": "Bolo de Morango",
-      "description": "Bolo recheado e coberto com morangos",
+      "name": "Strawberry Cake",
+      "description": "Cake with strawberry topping.",
       "price": 40.5,
       "restaurantId": "tasty-treats"
     },
     {
       "id": "cake",
       "imagePath": "assets/img/foods/cake.png",
-      "name": "Fatia de Bolo",
-      "description": "Fatia de bolo de morango",
+      "name": "Cake Slice",
+      "description": "A slice of the cake of your choice.",
       "price": 5.9,
       "restaurantId": "tasty-treats"
     }
@@ -212,161 +212,161 @@
       "name": "Julia",
       "date": "2017-01-23T18:25:43",
       "rating": 4.5,
-      "comments": "Tudo muito bom, entrega no tempo certo",
+      "comments": "Excellent, delivery on time.",
       "restaurantId": "bread-bakery"
     },
     {
       "name": "Aline",
       "date": "2016-12-12T18:25:43",
       "rating": 3,
-      "comments": "NÃO recomendo. O recheio é só um creme, não tem camarão e nem carne",
+      "comments": "I DO NOT recommen. There is no shrimp or meat, only sauce.",
       "restaurantId": "bread-bakery"
     },
     {
       "name": "Renata",
       "date": "2016-12-12T18:25:43",
       "rating": 2,
-      "comments": "Não foi muito agradável ao nosso paladar, e eu e meu esposo no outro dia passamos super mal. Pode até ter sido outra coisa, mas...",
+      "comments": "It did not please our taste. Me and my husband got sick on the next day. It may have been something else, but...",
       "restaurantId": "bread-bakery"
     },
     {
       "name": "Renata",
       "date": "2016-12-12T18:25:43",
       "rating": 5,
-      "comments": "Nunca deixou na mão, comida sempre deliciosa.",
+      "comments": "Never let me down, always delicious.",
       "restaurantId": "bread-bakery"
     },
     {
       "name": "Daniela",
       "date": "2017-01-23T18:25:43",
       "rating": 4,
-      "comments": "Sanduíche muito bom! Já pedi diversas vezes sempre bom!",
+      "comments": "Excellent sandwich! I have ordered it several times.",
       "restaurantId": "burger-house"
     },
     {
       "name": "Laila",
       "date": "2017-02-02T18:25:43",
       "rating": 5,
-      "comments": "Melhor hambúrguer que já provei. Vai ser difícil voltar para mc e bk",
+      "comments": "Best burger that I've ever had. I will be difficult to return to BK.",
       "restaurantId": "burger-house"
     },
     {
       "name": "Suzana",
       "date": "2016-12-12T18:25:43",
       "rating": 3.5,
-      "comments": "Meu sanduíche chegou frio e todo desmontado =\\",
+      "comments": "My sandwich came cold =\\.",
       "restaurantId": "burger-house"
     },
     {
       "name": "Eric",
       "date": "2017-01-23T18:25:43",
       "rating": 4.5,
-      "comments": "Excelente opção! Recomendo!",
+      "comments": "Excellent option! Totally recommend it!",
       "restaurantId": "coffee-corner"
     },
     {
       "name": "Amanda",
       "date": "2017-02-02T18:25:43",
       "rating": 2.5,
-      "comments": "Demorou muito e o café veio gelado",
+      "comments": "It took a long time and the coffee came cold.",
       "restaurantId": "coffee-corner"
     },
     {
       "name": "Carla",
       "date": "2016-12-12T18:25:43",
       "rating": 4.8,
-      "comments": "Tudo perfeito. Entrega, embalagem, comida. Resultado? Melhor custo beneficio",
+      "comments": "Everything was perfect. Great bang for the buck.",
       "restaurantId": "coffee-corner"
     },
     {
       "name": "Rodrigo",
       "date": "2016-12-12T18:25:43",
       "rating": 4,
-      "comments": "Muito rápida a entrega, mas é caro.",
+      "comments": "Very fast, but expensive.",
       "restaurantId": "coffee-corner"
     },
     {
       "name": "André",
       "date": "2016-12-12T18:25:43",
       "rating": 4.5,
-      "comments": "Excelente como sempre!",
+      "comments": "Amazing as always!",
       "restaurantId": "coffee-corner"
     },
     {
       "name": "João",
       "date": "2017-01-23T18:25:43",
       "rating": 5,
-      "comments": "Excelente. Fiz o pedido com outro endereço e quando vi o erro liguei avisando. O motoqueiro cortou a cidade todinha e a comida ainda chegou quentinha (e deliciosa). Estou sempre pedindo e recomendando",
+      "comments": "I always order with them and I recommend it!",
       "restaurantId": "green-food"
     },
     {
       "name": "Marcelo",
       "date": "2017-02-02T18:25:43",
       "rating": 4.5,
-      "comments": "Chegou muito rápido, antes mesmo da previsão",
+      "comments": "It arrived very fast. Nice!",
       "restaurantId": "green-food"
     },
     {
       "name": "Fatinha",
       "date": "2017-01-23T18:25:43",
       "rating": 2,
-      "comments": "Ñ gostei dos sabores q pedi e achei o preço muito elevado",
+      "comments": "I did not like the fodd or the price.",
       "restaurantId": "ice-cream"
     },
     {
       "name": "Lucas",
       "date": "2017-02-02T18:25:43",
       "rating": 2.5,
-      "comments": "Esperar 1:45hr pra receber o pedido é INACEITÁVEL",
+      "comments": "They made me wait for almost 2 hours... UNACCEPTABLE.",
       "restaurantId": "ice-cream"
     },
     {
       "name": "Jacira",
       "date": "2017-02-01T18:25:43",
       "rating": 4.5,
-      "comments": "Veio OK!",
+      "comments": "It came OK!",
       "restaurantId": "ice-cream"
     },
     {
       "name": "Ana",
       "date": "2017-01-23T18:25:43",
       "rating": 5,
-      "comments": "Rápido e sempre uma delicia!! Ja pedi 3x e sempre veio rapido e tudo certinho.",
+      "comments": "Quick and delicious!!!",
       "restaurantId": "tasty-treats"
     },
     {
       "name": "Larissa",
       "date": "2017-02-02T18:25:43",
       "rating": 2.5,
-      "comments": "A taxa de entrega poderia ser mais barata.",
+      "comments": "The delivery rate should be cheaper.",
       "restaurantId": "tasty-treats"
     },
     {
       "name": "Jarbas",
       "date": "2016-12-15T18:25:43",
       "rating": 4.7,
-      "comments": "Excelente e chegou muito rápido!",
+      "comments": "Great and fast!",
       "restaurantId": "tasty-treats"
     },
     {
       "name": "Rafaela",
       "date": "2017-01-12T18:25:43",
       "rating": 5,
-      "comments": "Chegou rápido e perfeito!",
+      "comments": "Everything perfect.",
       "restaurantId": "tasty-treats"
     },
     {
       "name": "Julia",
       "date": "2016-12-12T18:25:43",
       "rating": 1.5,
-      "comments": "Sempre gostei muito dos pedidos que eu fiz, mas dessa vez foi péssimo e decepcionou muito. Demorou 30min a mais pra chegar do que o tempo máximo esperado.",
+      "comments": "I have always liked their food, but this time it came cold and half an hour over the estimated delivery time.",
       "restaurantId": "tasty-treats"
     },
     {
       "name": "Marília",
       "date": "2016-12-20T18:25:43",
       "rating": 4.5,
-      "comments": "Taxa de entrega bastante elevada e precisa colocar no app se a pessoa quer porção adicional de algo (calda, crocante etc)",
+      "comments": "Extremelly expensive but great food.",
       "restaurantId": "tasty-treats"
     }
   ],
