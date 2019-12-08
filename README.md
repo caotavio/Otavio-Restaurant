@@ -24,6 +24,10 @@
 
 `json-server db.json` or `nodemon backend backend/dist/server.js`
 
+### Note on the Regex
+
+When you put the Post Code the Regex is set to Irish post podes (Eircode). E.g. *V95D8HD*
+
 ## Credits
 
 All of the images used in the app belong to freepik.com
