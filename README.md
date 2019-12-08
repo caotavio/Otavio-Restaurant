@@ -4,7 +4,7 @@
 
 ### Live Demo
 
-[i-Hungry Web App](https://i-hungry.herokuapp.com "i-Hungry")
+[i-Hungry Web App](https://i-hungry.herokuapp.com "i-Hungry")<br/>
 Login: `user@mail.com` | Password: `userpass`
 
 ### Installing the Dependencies (to run locally)
