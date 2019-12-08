@@ -1,6 +1,6 @@
 # Meat - Angular App
 
-## An i-Food type web application which you can choose between restaurants, their menu and reviews about them and add items to a cart. It features a login that uses JSON Web Token that allows the user to enter a form to complete the order and rate if at the end.
+## An i-Food type web application on which you can choose between restaurants, visualize their menu and reviews about them and add items to a cart. It features a login that uses JSON Web Token that allows the user to enter a form to complete the order and rate it at the end.
 
 ### Live Demo
 
