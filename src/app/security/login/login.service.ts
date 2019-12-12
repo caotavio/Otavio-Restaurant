@@ -29,6 +29,7 @@ export class LoginService {
 
     logout() {
         this.user = undefined
+        this.router.navigate(['/'])
     }
 
     handleLogin(path: string = this.lastUrl) {
